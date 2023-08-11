@@ -5,14 +5,9 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 body{
     font-family: 'Raleway', sans-serif;
-    background: #fff;
-    line-height: 1.6;
-    font-size: 16px;
-    color: #333;
 }
 html{
     scroll-behavior: smooth;
@@ -21,11 +16,13 @@ p{
      color: rgb(85, 85, 85);
 }
 /* Transition */
-a{
+a,
+.btn{
     transition: all 0.3s ease;
 }
 /*Desktop Nav*/
-nav{
+nav, 
+.nav-links{
     display: flex;
 }
 nav {
@@ -37,4 +34,38 @@ nav {
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
+}
+a {
+    text-decoration: none;
+    color: #010101;
+    text-decoration-color: white;
+}
+a:hover{
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.logo:hover{
+cursor: default;
+}
+/*hamburger*/
+#hamburger-nav {
+    display: none;
+}
+.hamburger-menu {
+    position: relative;
+    display: flex;
+}
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
 }
